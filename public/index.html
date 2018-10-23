@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>To-Do's</title>
+	<meta charset="utf-8">
+	<meta name="description" content="To-Do but just a simple full stack project">
+	<meta name="author" content="micha">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+	<header>
+		<div class="centered">
+		    <h2>To-Do's</h2>
+		    <h5>don't forget anything...</h5>
+	    </div>
+	</header>
+	<br>
+	<main>
+		<form class="todo-form">
+	      	<div class="error-message">
+	      	</div>
+			<input class="u-full-width" placeholder="To-Do" id="name" name="name" type="text">
+			<textarea class="u-full-width" placeholder="content" id="content" name="content"></textarea>
+			<input class="button-primary" value="Submit" type="submit">
+		</form>
+		<br>
+		<div class="loading">
+		  	<img src="loading.gif" alt="">
+		</div>
+		<div class="todos"></div>
+		</div>
+	</main>
+	<script src='js/script.js'></script>
+</body>
+</html>

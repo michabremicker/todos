@@ -1,0 +1,122 @@
+.centered {
+	text-align: center;
+	margin-top: 10%;
+}
+
+.error-message {
+	background: #ff9b9b;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.todo-form, .loading {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.loading {
+  text-align: center;
+}
+
+.todos {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.todos > div {
+  background: hsl(0, 0%, 95%);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#divs:hover {
+  background: hsl(0, 0%, 85%);
+}
+
+.todos > div > h3 {
+  word-wrap: break-word;
+}
+
+.todos > div > p {
+  word-wrap: break-word;
+}
+
+.todos > div:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* beautiful checkbox :) */
+
+.containerdone {
+  text-align: center;
+  display: block;
+  position: relative;
+/*  padding-right: 70px;
+  margin-bottom: 24px;*/
+  cursor: pointer;
+  font-size: 44px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.containerdone input {
+  text-align: center;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  text-align: center;
+  padding-right: 5%;
+  padding-top: 5%;
+  border-radius: 20%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  width: 50px;
+  background: hsl(0, 0%, 90%);
+  /*background-color: #eee;*/
+}
+
+/* On mouse-over, add a grey background color */
+.containerdone:hover input ~ .checkmark {
+  /*background-color: #ccc;*/
+  background: hsl(0, 0%, 95%);
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerdone input:checked ~ .checkmark {
+  background-color: #32c3f0;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerdone input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerdone .checkmark:after {
+  left: 36px;
+  top: 20px;
+  width: 20px;
+  height: 40px;
+  border: solid white;
+  border-width: 0 12px 12px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

@@ -1,0 +1,15 @@
+{
+	"name": "todos",
+	"version": "0.0.0",
+	"private": true,
+	"description": "a simple but restful todo list",
+	"main": "app.js",
+	"author": "Micha Bremicker",
+	"license": "ISC",
+	"dependencies": {
+		"express": "4.16.4",
+		"cors": "2.8.4",
+		"monk": "6.0.6",
+		"dateformat": "3.0.3"
+	}
+}
